@@ -6,7 +6,12 @@
 version: 2
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "src/Crossroads.Launcher" # Location of package manifests
+    schedule:
+      interval: "monthly"
+
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "src/Crossroads" # Location of package manifests
     schedule:
       interval: "monthly"
 
